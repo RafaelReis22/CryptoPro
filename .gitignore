@@ -1,1 +1,30 @@
-node_modules
+# Maven
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.eclipse/
+.project
+.classpath
+
+# Node.js
+node_modules/
+dist/
+.npm/
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# JaCoCo
+jacoco.exec
