@@ -13,7 +13,7 @@ import java.util.Base64;
  */
 public class EncriptacaoAssimetrica {
 
-    private static final String ALGORITMO = "RSA";
+    private static final String ALGORITMO = "RSA/ECB/OAEPWithSHA-256AndMGF1Padding";
 
     public static String encriptar(String entrada, PublicKey chavePublica) {
         try {
@@ -38,7 +38,7 @@ public class EncriptacaoAssimetrica {
     }
 
     public static KeyPair gerarParChaves() throws NoSuchAlgorithmException {
-        KeyPairGenerator generator = KeyPairGenerator.getInstance(ALGORITMO);
+        KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
         generator.initialize(2048);
         return generator.generateKeyPair();
     }
