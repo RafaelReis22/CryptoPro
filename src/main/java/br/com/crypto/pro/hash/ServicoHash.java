@@ -55,8 +55,8 @@ public class ServicoHash {
             char[] passwordChars = senha.toCharArray();
             byte[] saltBytes = Base64.getDecoder().decode(sal);
             
-            // PBKDF2 com 10.000 iterações e chave de 256 bits
-            PBEKeySpec spec = new PBEKeySpec(passwordChars, saltBytes, 10000, 256);
+            // PBKDF2 com 310.000 iterações conforme recomendação OWASP 2024
+            PBEKeySpec spec = new PBEKeySpec(passwordChars, saltBytes, 310000, 256);
             SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
             byte[] hash = factory.generateSecret(spec).getEncoded();
             
