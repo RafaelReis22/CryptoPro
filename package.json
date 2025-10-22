@@ -1,11 +1,21 @@
 {
   "name": "cryptopro-especialista-js",
   "version": "1.0.0",
-  "description": "Componente JavaScript para Gestão de Tokens",
+  "description": "Componente JavaScript para Gestão de Tokens JWT",
   "type": "module",
   "main": "identidade/token.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
   "dependencies": {
     "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@jest/globals": "^29.7.0"
+  },
+  "jest": {
+    "transform": {}
   },
   "author": "CryptoPro",
   "license": "MIT"
