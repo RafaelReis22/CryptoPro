@@ -1,0 +1,12 @@
+{
+  "name": "cryptopro-especialista-js",
+  "version": "1.0.0",
+  "description": "Componente JavaScript para Gestão de Tokens",
+  "type": "module",
+  "main": "identidade/token.js",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0"
+  },
+  "author": "CryptoPro",
+  "license": "MIT"
+}
