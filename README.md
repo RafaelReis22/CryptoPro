@@ -54,8 +54,5 @@ mvn exec:java -Dexec.mainClass="br.com.crypto.pro.identidade.ServicoToken"
 
 ---
 
-> [!CAUTION]
-> **Arquivos JavaScript Descontinuados**: Os arquivos originais `.js` foram marcados como obsoletos (deprecated) e sua lógica foi removida para evitar confusão. O foco total do projeto agora é a implementação em **Java**. Sinta-se à vontade para deletar as pastas antigas manualmente se desejar uma limpeza completa do diretório.
-
 > [!IMPORTANT]
 > **Padrões Técnicos**: Este projeto utiliza estritamente o **JCA (Java Cryptography Architecture)**. Todo o código foi escrito seguindo as melhores práticas de **Clean Code** e está 100% em Português.
